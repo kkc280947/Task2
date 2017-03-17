@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="@dimen/eight"
+        android:layout_height="@dimen/eight"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginStart="@dimen/twelve"
+        android:layout_marginEnd="@dimen/twelve"
+        android:background="@drawable/circle_red"
+        android:id="@+id/vwDot"
+        />
+
+    <TextView
+        android:layout_marginStart="@dimen/twelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemStatus"
+        android:textSize="@dimen/textTwenty"
+        android:layout_marginTop="@dimen/twelve"
+        android:layout_marginEnd="@dimen/twelve" />
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_twentyFour"
+        android:layout_marginStart="@dimen/forty"
+        android:layout_marginEnd="@dimen/forty"
+        >
+        <LinearLayout
+        android:id="@+id/llFollowUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/textTwenty"
+            android:text="@string/next_follow_up" />
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:layout_marginEnd="@dimen/four"
+            android:layout_marginStart="@dimen/four"
+            android:id="@+id/ivDatePicker"
+            android:padding="@dimen/twenty"
+            android:background="@drawable/calendar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFollowUpDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFollowUp"
+        android:text="@string/dateFollowUp"
+        android:layout_marginTop="@dimen/four"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/textTwenty"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/twelve"
+        android:id="@+id/tvModelInterested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFollowUpDate"
+        android:textSize="@dimen/textTwenty"
+        android:text="@string/model_intersted" />
+
+    <LinearLayout
+        android:id="@+id/llInterested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvModelInterested"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/etCategory"
+            android:textSize="@dimen/textTwenty"
+            android:text="@string/model_intersted_name"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/four"
+            android:id="@+id/tvEditCategButton"
+            android:textColor="@color/red"
+            android:padding="@dimen/four"
+            android:layout_marginStart="@dimen/four"
+            android:text="@string/edit" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="@dimen/textTwenty"
+        android:layout_marginTop="@dimen/twelve"
+        android:id="@+id/tvExpectedPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llInterested"
+        android:text="@string/expected_price" />
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvExpectedPrice"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etExpectedPriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/textTwenty"
+            android:text="@string/expected_price_values"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/four"
+            android:textColor="@color/red"
+            android:id="@+id/tvEditPrice"
+            android:padding="@dimen/four"
+            android:layout_marginEnd="@dimen/four"
+            android:text="@string/edit" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPrice"
+        android:textSize="@dimen/textTwenty"
+        android:layout_marginTop="@dimen/twelve"
+        android:text="@string/address" />
+
+    <TextView
+        android:id="@+id/tvFullAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddress"
+        android:text="@string/full_address"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/four"
+        android:textSize="@dimen/textTwenty"/>
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFullAddress"
+        android:textSize="@dimen/textTwenty"
+        android:layout_marginTop="@dimen/twelve"
+        android:text="@string/city" />
+
+        <TextView
+        android:layout_marginTop="@dimen/four"
+        android:textSize="@dimen/textTwenty"
+        android:id="@+id/tvCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCity"
+        android:text="@string/city_name"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+        <TextView
+        android:layout_marginTop="@dimen/twelve"
+        android:textSize="@dimen/textTwenty"
+        android:id="@+id/tvState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCityName"
+        android:text="@string/state" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvState"
+        android:text="@string/state_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textTwenty"
+        android:layout_marginTop="@dimen/four"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/district_name"
+            android:textSize="@dimen/textTwenty"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDistrict"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/four"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvDistrict"
+            android:textSize="@dimen/textTwenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/tvDistrict"
+            android:layout_above="@+id/tvCityName"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2" />
+    </RelativeLayout>
+
+</ScrollView>

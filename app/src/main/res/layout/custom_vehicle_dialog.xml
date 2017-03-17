@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_twentyFour"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_twentyFour"
+            >
+
+            <ImageView
+                android:id="@+id/ivCloseDialog"
+                android:layout_width="@dimen/forteen"
+                android:layout_height="@dimen/forteen"
+                android:background="@drawable/multiply" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_toEndOf="@+id/ivCloseDialog"
+                android:text="Select Model"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:text="@string/vehicle_category"
+            android:textSize="@dimen/textTwelve" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_button_red"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_twentyFour"
+            >
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvPassengerCarrier"
+                android:textColor="@color/whilte"
+                android:background="@drawable/toggle_red_fill"
+                android:padding="@dimen/sixteen"
+                android:text="@string/passenger_carrier" />
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/sixteen"
+                android:id="@+id/tvGoodsCarrier"
+                android:text="@string/good_carrier" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel_type"
+            android:textSize="@dimen/textTwelve"
+            android:layout_marginBottom="@dimen/eight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_button_red"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        >
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_red_fill"
+            android:textColor="@color/whilte"
+            android:id="@+id/tvDiesel"
+            android:padding="@dimen/sixteen"
+            android:text="@string/diesel" />
+
+        <TextView
+            android:padding="@dimen/sixteen"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvCng"
+            android:text="@string/cng" />
+        </LinearLayout>
+        <include
+
+            layout="@layout/vehicle_passenger_type"
+            />
+        <include
+            layout="@layout/goods_type_carrier"
+            />
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:textAlignment="center"
+        android:text="@string/save"
+        android:textColor="@color/whilte"
+
+        />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

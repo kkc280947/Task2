@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/sixteen"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/llTimeline">
+        <View
+            android:id="@+id/vwTopLine"
+            android:layout_width="@dimen/one"
+            android:background="@color/grey"
+            android:layout_height="@dimen/eight"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_width="@dimen/twelve"
+            android:layout_height="@dimen/twelve"
+            android:id="@+id/ivCircle"
+            android:layout_below="@+id/vwTopLine"
+            android:background="@drawable/circle_timeline" />
+
+        <View
+            android:id="@+id/vwLineBottom"
+            android:layout_width="@dimen/one"
+            android:background="@color/grey"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/fortyFour"
+            android:layout_below="@+id/ivCircle"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/llTimeline"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/tvDateAct"
+        android:text="@string/dateFollowUp"
+        android:textSize="@dimen/textTwenty"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/sixteen"
+        android:id="@+id/tvStatus"
+        android:layout_marginStart="@dimen/margin_twentyFour"
+        android:layout_marginTop="@dimen/eight"
+        android:textColor="@color/black"
+        android:text="@string/StatusOf"
+        android:layout_marginEnd="@dimen/margin_twentyFour" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lmPassenger"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eight"
+        android:text="@string/vehicle_type"
+        android:textSize="@dimen/textTwelve" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_button_red"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvBuildUp"
+            android:textColor="@color/whilte"
+            android:background="@drawable/toggle_red_fill"
+            android:padding="@dimen/sixteen"
+            android:text="@string/build_up_bus" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/sixteen"
+            android:id="@+id/tvBusChasis"
+            android:text="@string/bus_chasis" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_twentyFour"
+        android:text="@string/air_condition"
+        android:textSize="@dimen/textTwelve" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_button_red"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+
+        >
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvAC"
+            android:textColor="@color/whilte"
+            android:background="@drawable/toggle_red_fill"
+            android:padding="@dimen/sixteen"
+            android:text="@string/ac" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/sixteen"
+            android:id="@+id/tvNonAc"
+            android:text="@string/nonAc" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/body_type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinBody"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/seat_capacity"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinSeat"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/wheel_base"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinWheel"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brake_type"
+        android:textSize="@dimen/textTwelve" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_button_red"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        >
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvHydraulic"
+            android:textColor="@color/whilte"
+            android:background="@drawable/toggle_red_fill"
+            android:padding="@dimen/sixteen"
+            android:text="@string/hydraulic" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvAirBrake"
+            android:text="@string/airBrake" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:layout_marginBottom="@dimen/eight"
+        android:text="@string/color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinColor"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+
+</LinearLayout>

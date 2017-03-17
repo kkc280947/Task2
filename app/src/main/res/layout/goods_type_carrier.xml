@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lmGoods"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/Vehicle_type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinVehicle"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/wheel_base"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinWheelBase"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/vehicle_group"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinVehicleGroup"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/cargo_type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinCargoType"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:text="@string/cargo_length"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinCargoLength"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textTwelve"
+        android:layout_marginBottom="@dimen/eight"
+        android:text="@string/color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpinColorGoods"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/margin_twentyFour"
+        android:text="@string/choose_an_option"
+        android:padding="@dimen/sixteen"
+        android:background="@drawable/toggle_button_grey"
+        android:drawableRight="@drawable/downarrow"/>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/twelve"
+    android:layout_marginStart="@dimen/twelve">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCallTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textTwenty"
+            android:textSize="@dimen/textSixteen"
+            android:textColor="@color/black"
+            android:lines="1"
+            android:layout_marginEnd="@dimen/four"
+            android:text="@string/time"
+            android:layout_marginStart="@dimen/four" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/sixteen"
+            android:layout_marginStart="@dimen/sixteen"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/llTimeline">
+
+            <View
+                android:id="@+id/vwTop"
+                android:layout_width="@dimen/one"
+                android:background="@color/grey"
+                android:layout_height="@dimen/margin_twentyFour"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/twelve"
+                android:layout_height="@dimen/twelve"
+                android:id="@+id/ivCircle"
+                android:layout_marginTop="@dimen/margin_twentyFour"
+                android:background="@drawable/circle_timeline" />
+
+            <View
+                android:id="@+id/vwBottom"
+                android:layout_width="@dimen/one"
+                android:background="@color/grey"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/thirtySix"
+                android:layout_below="@+id/ivCircle"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/sixteen"
+            android:layout_marginTop="@dimen/four">
+
+            <TextView
+                android:id="@+id/tvCallName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/callerName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textTwenty" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cold_draw"
+                android:text="@string/category"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/four"
+            android:layout_marginStart="@dimen/four"
+            android:background="@drawable/phones" />
+    </LinearLayout>
+</LinearLayout>

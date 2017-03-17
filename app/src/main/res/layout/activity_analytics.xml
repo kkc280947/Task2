@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/four"
+        android:id="@+id/rvAnal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/analytics"
+        android:id="@+id/tvAnalytics"
+        android:layout_marginTop="@dimen/twelve"
+        android:textSize="@dimen/textTwentyFour"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/textTwenty"
+        android:layout_marginTop="@dimen/twelve"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/calendars"
+        android:layout_alignParentRight="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:id="@+id/vwLine"
+            android:layout_marginTop="@dimen/twelve"
+            android:layout_below="@+id/tvAnalytics"
+            android:background="@color/grey"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/converstion"
+            android:layout_below="@+id/vwLine"
+            android:id="@+id/tvConRatio"
+            android:layout_margin="@dimen/twelve"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/closed"
+            android:textSize="@dimen/textTwenty"
+            android:id="@+id/textView"
+            android:layout_marginEnd="@dimen/twenty"
+            android:layout_below="@+id/tvConRatio"
+            android:textColor="@color/red"
+            android:drawableEnd="@drawable/downarrow"
+            android:drawablePadding="@dimen/four"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/twenty"
+            android:drawableRight="@drawable/downarrow"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rvAnal"
+        android:id="@+id/bctAnalytics">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+
+
+</RelativeLayout>
